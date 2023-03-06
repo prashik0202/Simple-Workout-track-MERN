@@ -7,12 +7,13 @@
   --error: #e7195a;
 }
 body {
-  background: #f1f1f1;
+  background: #1b1b1b;
   margin: 0;
   font-family: "Poppins";
+  color: rgb(255, 255, 255);
 }
 header {
-  background: #fff;
+  background: #282828;
 }
 header .container {
   max-width: 1400px;
@@ -23,7 +24,7 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: #333;
+  color: var(--primary);
   text-decoration: none;
 }
 .pages{
@@ -39,9 +40,10 @@ header a {
   gap: 100px;
 }
 .workout-details {
-  background: #fff;
+  background: var(--primary);
   border-radius: 4px;
   margin: 20px auto;
+  margin-left: 10px;
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
@@ -49,25 +51,26 @@ header a {
 .workout-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
-  color: var(--primary);
+  color: #000000;
 }
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
-  color: #555;
+  color: #1e1e1e;
 }
 .workout-details span {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   padding: 6px;
   border-radius: 50%;
-  color: #333;
+  color: #000000;
 }
 
 /* new workout form */
+
 label, input {
   display: block;
 }
@@ -76,16 +79,18 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 3px solid var(--primary);
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: #dbdbdb;
 }
 form button {
   background: var(--primary);
   border: 0;
-  color: #fff;
+  color: #000000;
   padding: 10px;
   font-family: "Poppins";
+  font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -96,4 +101,8 @@ div.error {
   color: var(--error);
   border-radius: 4px;
   margin: 20px 0;
+}
+
+input.error{
+  border: 3px solid var(--error);
 }
