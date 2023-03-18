@@ -127,3 +127,20 @@ form.signup, form.login {
   background: #fff;
   border-radius: 4px;
 }
+
+nav button {
+  font-weight: 500;
+  background: rgb(249, 108, 108);
+  color: black;
+  border: 2px solid rgb(245, 71, 71);
+  padding: 6px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+span{
+  color: #1aac83;
+}
